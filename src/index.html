@@ -2,23 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" type="image/png" href="./img/samsung-logo-small.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Bespoke Jet™</title>
   </head>
-  <body>
-    <load ="partials/header.html" />
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
-
+  <body class="container">
+    <div class="background">
+      <img
+        srcset="./img/background.png 1x, ./img/background-2x@2x.png"
+        alt="background-fur"
+      />
+    </div>
+    <div class="section">
+      <div class="main-section">
+        <img
+          srcset="
+            ./img/carusel-1-full.png       1x,
+            ./img/carusel-1-full-2x@2x.png 2x
+          "
+          alt="vacuums big picture"
+          class="carusel-first-full"
+        />
+        <h1 class="bespoke-title">Bespoke Jet™</h1>
+        <div class="text-section">
+          <a href="./index.html"
+            ><img
+              srcset="
+                ./img/samsung-logo.png       1x,
+                ./img/samsung-logo-2x@2x.png 2x
+              "
+              alt="samsung-logo"
+              class="samsung-logo"
+          /></a>
+          <h2 class="main-text">
+            See why the Bespoke Jet™ is “so good” it made this
+            <span class="kitchn-small">kitchn</span> journalist cry
+          </h2>
+        </div>
+      </div>
+      <div class="after-main-section">
+        <div class="text-area">
+          <p class="sub-text">
+            “Because it’s so nice-looking, it can live right in the kitchen. No
+            more hauling a vacuum up and down the basement stairs on the daily”
+            <a href="./blanc.html" class="read-more">Read more…</a>
+          </p>
+          <div class="swiper-navigation">
+            <button type="button" class="swiper-button-prev">
+              <svg class="svg">
+                <use href="./img/symbol-defs.svg#icon-slider-left"></use>
+              </svg>
+            </button>
+            <p class="swiper-counter"><span class="count">1</span>/5</p>
+            <button type="button" class="swiper-button-next">
+              <svg class="svg">
+                <use href="./img/symbol-defs.svg#icon-slider-right"></use>
+              </svg>
+            </button>
+          </div>
+          <a href="./blanc.html" class="shop-now">Shop now</a>
+        </div>
+        <div class="photo-section">
+          <img
+            srcset="./img/carusel-1.png 1x, ./img/carusel-1-2x@2x.png"
+            class="photo-carusel"
+          />
+        </div>
+      </div>
+    </div>
     <script type="module" src="./main.js"></script>
   </body>
 </html>

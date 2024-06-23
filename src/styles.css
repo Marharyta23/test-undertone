@@ -1,0 +1,240 @@
+@import url(./reset.css);
+
+.background {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+.section {
+  position: absolute;
+  z-index: 1;
+  width: 90%;
+  height: 90%;
+  left: 5%;
+  top: 5%;
+  border: 0.4vw solid black;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.main-section {
+  width: 100%;
+  height: 100%;
+}
+.text-section {
+  width: 54%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+}
+.samsung-logo {
+  position: absolute;
+  width: 27%;
+  margin: 6.5% 0 10% 7.5%;
+  animation-duration: 2s;
+  animation-name: slide-in-from-left-and-up;
+  z-index: 10;
+}
+.kitchn-logo {
+  width: 21%;
+}
+.main-text {
+  position: absolute;
+  font-size: 210%;
+  font-family: 'Samsung Sharp Sans';
+  font-weight: bold;
+  line-height: 120%;
+  width: 65%;
+  margin: 17% 0 11% 7.5%;
+  opacity: 0;
+  z-index: 10;
+}
+.kitchn-small {
+  font-weight: 400;
+}
+.sub-text {
+  margin: 47% 0 7% 7.5%;
+  font-size: 100%;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  width: 65%;
+  line-height: 165%;
+}
+.read-more {
+  color: #808080;
+}
+.carusel-first-full {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+.bespoke-title {
+  font-size: 210%;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  line-height: 0.487;
+  text-align: center;
+  position: absolute;
+  z-index: 100;
+  top: 7%;
+  right: 4.5%;
+  letter-spacing: -1px;
+}
+.after-main-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.text-area {
+  position: absolute;
+  width: 53%;
+  height: 100%;
+  background-color: #ffffff;
+  left: 0;
+  opacity: 0;
+}
+.photo-section {
+  position: absolute;
+  width: 47%;
+  height: 100%;
+  right: 0;
+  opacity: 0;
+}
+.photo-carusel {
+  height: 100%;
+  width: 100%;
+  transition: 500ms;
+}
+.opacity {
+  opacity: 0;
+}
+.slide-in-from-left {
+  animation-name: slide-in-from-left;
+  animation-duration: 2.5s;
+  opacity: 1;
+}
+.slide-in-from-left13 {
+  animation-name: slide-in-from-left13;
+  animation-duration: 3s;
+  opacity: 1;
+}
+.scale-up-and-back {
+  animation-name: scale-up-and-back;
+  opacity: 1;
+  animation-duration: 3s;
+}
+.mt23 {
+  margin-top: 23%;
+  transition-duration: 3s;
+}
+.swiper-navigation {
+  display: flex;
+  flex-direction: row;
+  width: 14%;
+  height: 8%;
+  align-items: center;
+  gap: 1%;
+  position: absolute;
+  bottom: 23%;
+  left: 7.5%;
+  z-index: 12;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: red;
+  border: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 13;
+}
+.svg {
+  width: 50%;
+}
+.swiper-counter {
+  font-weight: 500;
+  font-size: 140%;
+  z-index: 12;
+}
+.shop-now {
+  position: absolute;
+  font-size: 200%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-transform: uppercase;
+  left: 7.5%;
+  bottom: 9%;
+  padding: 25px;
+  border: 2px solid black;
+  border-radius: 55px;
+  font-family: 'SamsungOne';
+  z-index: 12;
+  cursor: pointer;
+  animation: pulse 2s infinite ease-in-out;
+}
+.swiper-button-prev:hover,
+.swiper-button-prev:focus,
+.swiper-button-prev:active {
+  transform: scale(1.1);
+}
+
+@keyframes slide-in-from-left13 {
+  0% {
+    transform: translateX(-13%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-from-left {
+  0% {
+    transform: translateX(-40%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-from-left-and-up {
+  0% {
+    transform: translateX(-100%) translateY(150%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0) translateY(150%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes scale-up-and-back {
+  0% {
+    transform: scale(1.42);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
