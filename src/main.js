@@ -1,6 +1,6 @@
 const refs = {
   mainText: document.querySelector('.main-text'),
-  afterMainSection: document.querySelector('.text-area'),
+  afterMainSection: document.querySelector('.overlay'),
   logo: document.querySelector('.samsung-logo'),
   mainSection: document.querySelector('.main-section'),
   photoSection: document.querySelector('.photo-section'),
@@ -9,6 +9,8 @@ const refs = {
   img: document.querySelector('.photo-carusel'),
   nextBtn: document.querySelector('.swiper-button-next'),
   prevBtn: document.querySelector('.swiper-button-prev'),
+  textSection: document.querySelector('.text-area'),
+  shopNow: document.querySelector('.shop-now'),
 };
 
 refs.logo.addEventListener('animationend', () => {
@@ -19,10 +21,7 @@ refs.mainText.addEventListener('animationend', () => {
   setTimeout(refs.photoSection.classList.add('scale-up-and-back'), 4000);
   setTimeout(refs.afterMainSection.classList.add('slide-in-from-left13'), 3000);
   setTimeout(refs.mainText.classList.add('mt23', 5000));
-});
-
-refs.afterMainSection.addEventListener('click', e => {
-  e.stopPropagation();
+  setTimeout(refs.textSection.classList.add('opacity'), 5000);
 });
 
 const swiper = {
@@ -81,4 +80,8 @@ refs.prevBtn.addEventListener('click', () => {
   count = ((count - 2) % Object.keys(swiper).length) + 1;
   slideTo(count);
   console.log('prev clicked');
+});
+
+refs.shopNow.addEventListener('mouseenter', () => {
+  refs.shopNow.classList.add('animation-none');
 });

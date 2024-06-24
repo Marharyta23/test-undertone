@@ -8,6 +8,13 @@
   font-family: 'SamsungOne';
   src: url('./fonts/SamsungOne-400.woff') format('woff');
 }
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
 
 /* Reset styles */
 h1,
