@@ -1,11 +1,16 @@
 @import url(./reset.css);
+@import url(./animation.css);
 
 .background {
   width: 100%;
   height: 100%;
-  overflow: hidden;
   position: relative;
   z-index: -1;
+}
+.background-fur {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
 }
 .section {
   position: absolute;
@@ -18,7 +23,6 @@
   background-color: #ffffff;
   overflow: hidden;
 }
-
 .main-section {
   width: 100%;
   height: 100%;
@@ -38,9 +42,6 @@
   animation-name: slide-in-from-left-and-up;
   z-index: 10;
 }
-.kitchn-logo {
-  width: 21%;
-}
 .main-text {
   position: absolute;
   font-size: 210%;
@@ -52,21 +53,36 @@
   opacity: 0;
   z-index: 10;
 }
+.main-text-span {
+  font-family: 'Samsung Sharp Sans';
+  font-weight: bold;
+  line-height: 120%;
+  margin-left: 3%;
+}
 .kitchn-small {
   font-weight: 400;
+  display: flex;
+  flex-direction: row;
+}
+.kitch-logo {
+  width: 8%;
+  height: 8%;
 }
 .sub-text {
-  position: absolute;
   font-size: 100%;
   font-weight: 500;
   color: #000000;
-  width: 37%;
   line-height: 165%;
-  z-index: 17;
-  top: 46%;
 }
 .read-more {
   color: #808080;
+  font-weight: 500;
+}
+.sub-text-wrap {
+  position: absolute;
+  z-index: 18;
+  width: 37%;
+  top: 46%;
 }
 .carusel-first-full {
   width: 100%;
@@ -177,73 +193,20 @@
   text-align: center;
   text-transform: uppercase;
   bottom: 9%;
-  padding: 25px;
+  padding: 28px;
   border: 2px solid black;
   border-radius: 55px;
   font-family: 'SamsungOne';
   z-index: 12;
   cursor: pointer;
   animation: pulse 2s infinite ease-in-out;
+  line-height: 0.642;
 }
 .swiper-button-prev:hover,
 .swiper-button-prev:focus,
 .swiper-button-prev:active {
   transform: scale(1.1);
 }
-
 .animation-none {
   animation: none;
-}
-
-@keyframes slide-in-from-left13 {
-  0% {
-    transform: translateX(-13%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slide-in-from-left {
-  0% {
-    transform: translateX(-40%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slide-in-from-left-and-up {
-  0% {
-    transform: translateX(-100%) translateY(150%);
-    opacity: 0;
-  }
-  50% {
-    transform: translateX(0) translateY(150%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(0) translateY(0);
-  }
-}
-
-@keyframes scale-up-and-back {
-  0% {
-    transform: scale(1.42);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
