@@ -7,15 +7,25 @@
     
     <title>Bespoke Jet™</title>
     <script type="module" crossorigin src="/test-undertone/commonHelpers2.js"></script>
-    <link rel="stylesheet" href="/test-undertone/assets/index-e933952f.css">
+    <link rel="stylesheet" href="/test-undertone/assets/index-17192860.css">
   </head>
   <body class="container">
     <div class="background">
-      <img
-        srcset="./img/background.png 1x, ./img/background-2x@2x.png"
-        alt="background-fur"
-        class="background-fur"
-      />
+      <picture>
+        <source
+          media="(max-width:767px)"
+          srcset="./img/background-mob.png 1x, ./img/background-2x@2x-mob.png"
+        />
+        <source
+          media="(min-width:768px)"
+          srcset="./img/background.png 1x, ./img/background-2x@2x.png"
+        />
+        <img
+          srcset="./img/background.png 1x, ./img/background-2x@2x.png"
+          alt="background-fur"
+          class="background-fur"
+        />
+      </picture>
     </div>
     <div class="section">
       <div class="main-section">
@@ -41,10 +51,16 @@
           <h2 class="main-text">
             See why the Bespoke Jet™ is “so good” it made this
             <span class="kitchn-small"
-              ><img
-                srcset="./img/KitchnLogo-1x.png 1x, ./img/KitchnLogo-2x.png 2x"
-                class="kitch-logo"
-              />kitchn <span class="main-text-span">journalist cry</span></span
+              ><div class="kitchn">
+                <img
+                  srcset="
+                    ./img/KitchnLogo-1x.png 1x,
+                    ./img/KitchnLogo-2x.png 2x
+                  "
+                  class="kitch-logo"
+                /><span>kitchn</span>
+              </div>
+              <span class="main-text-span">journalist cry</span></span
             >
           </h2>
         </div>
@@ -76,10 +92,20 @@
       <div class="after-main-section">
         <div class="overlay"></div>
         <div class="photo-section">
-          <img
-            srcset="./img/carusel-1.png 1x, ./img/carusel-1-2x@2x.png"
-            class="photo-carusel"
-          />
+          <picture>
+            <source
+              media="(max-width:767px)"
+              srcset="./img/carusel-1.png 1x, ./img/carusel-1-2x@2x.png"
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="./img/carusel-1.png 1x, ./img/carusel-1-2x@2x.png"
+            />
+            <img
+              srcset="./img/carusel-1.png 1x, ./img/carusel-1-2x@2x.png"
+              class="photo-carusel"
+            />
+          </picture>
         </div>
       </div>
     </div>
