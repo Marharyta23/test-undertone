@@ -57,7 +57,7 @@
   font-family: 'Samsung Sharp Sans';
   font-weight: bold;
   line-height: 120%;
-  margin-left: 3%;
+  margin-left: 1%;
 }
 .kitchn-small {
   font-weight: 400;
@@ -65,8 +65,12 @@
   flex-direction: row;
 }
 .kitch-logo {
-  width: 8%;
-  height: 8%;
+  width: 25%;
+}
+.kitchn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .sub-text {
   font-size: 100%;
@@ -209,4 +213,92 @@
 }
 .animation-none {
   animation: none;
+}
+
+@media screen and (max-width: 767.98px) {
+  .samsung-logo {
+    top: 2%;
+    width: 40%;
+  }
+  .bespoke-title {
+    font-size: 130%;
+    top: 5%;
+  }
+  .main-text {
+    font-size: 145%;
+    top: 2.5%;
+  }
+  .kitch-logo {
+    width: 20%;
+  }
+  .kitchn-small {
+    flex-direction: column;
+  }
+  .sub-text {
+    font-size: 70%;
+    width: 100%;
+    line-height: 1;
+  }
+  .shop-now {
+    bottom: 3%;
+    font-size: 110%;
+    padding: 22px;
+  }
+  .kitchn {
+    display: inline-flex;
+  }
+  .swiper-navigation {
+    bottom: 12%;
+  }
+  .sub-text-wrap {
+    top: 48%;
+    width: 48%;
+  }
+  .read-more {
+    font-size: 70%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  .samsung-logo {
+    top: 4%;
+    width: 40%;
+  }
+  .bespoke-title {
+    font-size: 160%;
+    top: 5%;
+  }
+  .main-text {
+    font-size: 180%;
+    top: 6%;
+  }
+  .kitch-logo {
+    width: 15%;
+  }
+  .sub-text {
+    font-size: 110%;
+    line-height: 1.6;
+  }
+  .shop-now {
+    bottom: 3%;
+    font-size: 140%;
+    padding: 22px;
+  }
+  .kitchn {
+    display: flex;
+    flex-direction: row;
+  }
+  .swiper-navigation {
+    bottom: 13%;
+  }
+  .sub-text-wrap {
+    top: 48%;
+    width: 46%;
+  }
+  .read-more {
+    font-size: 110%;
+  }
+  .kitchn-small {
+    flex-direction: column;
+  }
 }
