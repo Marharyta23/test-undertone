@@ -206,9 +206,12 @@
   animation: pulse 2s infinite ease-in-out;
   line-height: 0.642;
 }
-.swiper-button-prev:hover,
-.swiper-button-prev:focus,
-.swiper-button-prev:active {
+.svg:hover,
+.svg:focus,
+.svg:active,
+.shop-now:hover,
+.shop-now:focus,
+.shop-now:active {
   transform: scale(1.1);
 }
 .animation-none {
@@ -307,7 +310,7 @@
   }
 }
 
-@media screen and (max-height: 666px) {
+@media screen and (max-height: 600px) {
   .samsung-logo {
     top: 1%;
     width: 30%;
